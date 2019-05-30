@@ -18,6 +18,11 @@ class Pessoa:
         self.diaNasc = input("Digite o dia de nascimento: ")
         self.sexo = input("Digite o sexo: ")
 
+        dados = dict(nome=self.nome, rg=self.rg, cpf=self.cpf, anoNasc=self.anoNasc,
+                mesNasc=self.mesNasc, diaNasc=self.diaNasc, sexo=self.sexo)
+
+        return dados
+
     def Exibir(self):
         print(self.nome)
         print(self.rg)
